@@ -22,6 +22,7 @@ import { Badge } from "@/components/ui/badge";
 import xmLogo from "./img/XM.png";
 import ExLogo from "./img/Exness.jpg";
 import RoboForexLogo from "./img/Robo.png";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function AnimatedCard({
   children,
@@ -1566,6 +1567,7 @@ function App() {
           </motion.div>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
