@@ -20,8 +20,11 @@ export function getGradientByColor(color: string) {
   return gradients[color] || "from-blue-500 to-blue-400"
 }
 
-// Debounce function for scroll events
-export const createDebouncedFunction = (func: Function, wait = 50) => {
+// Debounce function for scroll events - with type-safe parameters
+export const createDebouncedFunction = <T extends (...args: unknown[]) => unknown>(
+  func: T, 
+  wait = 50
+) => {
   return debounce(func, wait)
 }
 
