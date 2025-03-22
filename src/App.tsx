@@ -146,6 +146,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-black text-white">
+      <SpeedInsights />
 
       {/* Floating Navigation Bar */}
       {/* Floating Navigation Bar */}
@@ -1567,7 +1568,6 @@ function App() {
           </motion.div>
         </div>
       </footer>
-      <SpeedInsights />
     </div>
   );
 }
